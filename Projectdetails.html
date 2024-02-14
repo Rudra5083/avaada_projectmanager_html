@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Avaada</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-2">
+            <a href="existing_vendors.html"
+              ><img src="images/logo.png" alt="" height="51"
+            /></a>
+          </div>
+
+          <div class="col-md-5 ms-auto invites_log1">
+            <div class="invites"></div>
+
+            <div class="notification">
+              <a
+                class="dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  fill="currentColor"
+                  class="bi bi-bell-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2m.995-14.901a1 1 0 1 0-1.99 0A5 5 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901"
+                  />
+                </svg>
+
+                <div class="circle">3</div>
+              </a>
+
+              <div class="dropdown">
+                <div class="notifications dropdown-menu">
+                  <div class="notifications_heading justify-content-between">
+                    Notifications
+
+                    <span>2 New</span>
+                  </div>
+
+                  <div class="notifications_inside">
+                    <ul>
+                      <li>
+                        <a href="#"
+                          >New vendor details submitted: Vendor Code VND205</a
+                        >
+                        <div class="time_outer">
+                          <img src="images/time.png" alt="" /> 30 Min Ago
+                        </div>
+                      </li>
+
+                      <li>
+                        <a href="#"
+                          >Vendor details received: Vendor Code VND203, Name -
+                          MechCorp Engineering.</a
+                        >
+                        <div class="time_outer">
+                          <img src="images/time.png" alt="" /> 47 Min Ago
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="user_box">
+              <img src="images/userkumar.png" alt="" />
+              <a
+                class="dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Rahul Verma
+              </a>
+
+              <div class="dropdown">
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Profile </a></li>
+                  <li><a class="dropdown-item" href="#">Settings</a></li>
+                  <li><a class="dropdown-item" href="index.html">Logout</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-2 left_menu">
+            <ul>
+              <li><a href="#">Dashboard</a></li>
+              <li><a href="#">Project</a></li>
+              <li><a href="#">Vendor</a></li>
+              <li><a href="#">RFQ</a></li>
+              <li><a href="#">Report</a></li>
+              <li><a href="Packageslisting.html">Packages</a></li>
+              <li><a href="#">Logout</a></li>
+              <!-- <li><a href="#">Accounts</a></li> -->
+            </ul>
+          </div>
+
+          <div class="col-md-10">
+            <div class="listing_project">
+              <p>Projects Detail</p>
+            </div>
+            <div class="listing_project_block_1">
+              <div class="listing_project_block_2">
+                <div class="listing_project_block_3">
+                  <p><b>Project Name</b></p>
+                  <p class="block_detail_listing">Solar Project</p>
+                </div>
+              </div>
+              <div class="listing_project_block_2">
+                <div class="listing_project_block_3">
+                  <p><b>Project Code:</b></p>
+                  <p class="block_detail_listing">GH0038</p>
+                </div>
+              </div>
+              <div class="listing_project_block_2">
+                <div class="listing_project_block_3">
+                  <p><b>Project Location:</b></p>
+                  <p class="block_detail_listing">Delhi</p>
+                </div>
+              </div>
+              <div class="listing_project_block_2">
+                <div class="listing_project_block_3">
+                  <p><b>No. of Packages:</b></p>
+                  <p class="block_detail_listing">6</p>
+                </div>
+              </div>
+              <div class="listing_project_block_2">
+                <div class="listing_project_block_3">
+                  <p><b>Capacity:</b></p>
+                  <p class="block_detail_listing">232</p>
+                </div>
+              </div>
+            </div>
+            <div class="search_filter_outers ms-auto">
+              <div class="search_main">
+                <div id="custom-search-input">
+                  <div class="input-group col-md-12">
+                    <input
+                      type="text"
+                      class="form-control input-lg"
+                      placeholder="Search here"
+                      fdprocessedid="8achb"
+                    />
+                    <span class="input-group-btn">
+                      <button
+                        class="btn btn-info btn-lg"
+                        type="button"
+                        fdprocessedid="trsp06"
+                      >
+                        <span class="glyphicon glyphicon-search"
+                          ><svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            fill="currentColor"
+                            class="bi bi-search"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
+                            ></path></svg
+                        ></span>
+                      </button>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="create_listing_project">
+                <a
+                  class="vendor_btn vendor_maine_content"
+                  data-toggle="modal"
+                  data-target="#contactModal"
+                  >+ Create Package</a
+                >
+                <div class="filter_main">
+                  <button fdprocessedid="wyyigxh">
+                    <span>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-funnel"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M1.5 1.5A.5.5 0 0 1 2 1h12a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.128.334L10 8.692V13.5a.5.5 0 0 1-.342.474l-3 1A.5.5 0 0 1 6 14.5V8.692L1.628 3.834A.5.5 0 0 1 1.5 3.5zm1 .5v1.308l4.372 4.858A.5.5 0 0 1 7 8.5v5.306l2-.666V8.5a.5.5 0 0 1 .128-.334L13.5 3.308V2z"
+                        ></path>
+                      </svg>
+                    </span>
+                    Filter
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="listing_main" style="overflow-x: scroll">
+              <table>
+                <thead>
+                  <tr>
+                    <th><input type="checkbox" /></th>
+                    <th class="vendor_tabels">
+                      Package No. <img src="images/code.png" alt="" />
+                    </th>
+                    <th class="vendor_tabels">
+                      Package Name<img src="images/code.png" alt="" />
+                    </th>
+                    <th class="vendor_tabels">
+                      Description
+                      <img src="images/code.png" alt="" />
+                    </th>
+                    <th class="vendor_tabels">
+                      Category <img src="images/code.png" alt="" />
+                    </th>
+                    <th class="vendor_tabels">
+                      Sub Category
+                      <img src="images/code.png" alt="" />
+                    </th>
+                    <th class="vendor_tabels">
+                      BOQ Qty
+                      <img src="images/code.png" alt="" />
+                    </th>
+                    <th class="vendor_tabels">
+                      Package Creation Date
+                      <img src="images/code.png" alt="" />
+                    </th>
+                    <th class="vendor_tabels">
+                      Status <img src="images/code.png" alt="" />
+                    </th>
+                    <th class="vendor_tabels">
+                      Department <img src="images/code.png" alt="" />
+                    </th>
+                    <th class="vendor_tabels">
+                      Due Date <img src="images/code.png" alt="" />
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="maine_tr_vendor">
+                    <td><input type="checkbox" /></td>
+
+                    <td>001</td>
+                    <td>Solar Module Supply</td>
+                    <td>High-efficiency modules</td>
+                    <td>Electrical</td>
+                    <td>Module Supply</td>
+                    <td>1500</td>
+                    <td>03-01-2024</td>
+                    <td><p class="maine_inprogess_listing">Planning</p></td>
+                    <td>Procurement</td>
+                    <td>03-01-2024</td>
+                  </tr>
+                  <tr class="maine_tr_vendor">
+                    <td><input type="checkbox" /></td>
+
+                    <td>002</td>
+                    <td>Inverter Supply</td>
+                    <td>Grid-tied inverters</td>
+                    <td>Electrical</td>
+                    <td>Inverter</td>
+                    <td>30</td>
+                    <td>04-01-2024</td>
+                    <td><p class="maine_inprogess_listing">Ordered</p></td>
+                    <td>Procurement</td>
+                    <td>04-01-2024</td>
+                  </tr>
+
+                  <tr class="maine_tr_vendor">
+                    <td><input type="checkbox" /></td>
+
+                    <td>003</td>
+                    <td>Civil Works</td>
+                    <td>Construction</td>
+                    <td>Civil</td>
+                    <td>Civil Works</td>
+                    <td>200</td>
+                    <td>05-01-2024</td>
+                    <td><p class="maine_inprogess_listing">Delivered</p></td>
+                    <td>Procurement</td>
+                    <td>05-01-2024</td>
+                  </tr>
+                  <tr class="maine_tr_vendor">
+                    <td><input type="checkbox" /></td>
+
+                    <td>004</td>
+                    <td>Area Grading</td>
+                    <td>Land preparation</td>
+                    <td>Civil</td>
+                    <td>Area Grading</td>
+                    <td>10000</td>
+                    <td>07-01-2024</td>
+                    <td><p class="maine_inprogess_listing">In Progress</p></td>
+                    <td>Procurement</td>
+                    <td>07-01-2024</td>
+                  </tr>
+                  <tr class="maine_tr_vendor">
+                    <td><input type="checkbox" /></td>
+
+                    <td>005</td>
+                    <td>Engineering Studies</td>
+                    <td>Feasibility studies</td>
+                    <td>Consultancy</td>
+                    <td>Power Transformer</td>
+                    <td>5</td>
+                    <td>10-01-2024</td>
+                    <td><p class="maine_inprogess_listing">Completed</p></td>
+                    <td>Engineering</td>
+                    <td>10-01-2024</td>
+                  </tr>
+
+                  <tr class="maine_tr_vendor">
+                    <td><input type="checkbox" /></td>
+
+                    <td>006</td>
+                    <td>Erection Services</td>
+                    <td>Equipment installation</td>
+                    <td>Mechanical</td>
+                    <td>Soil Investigation</td>
+                    <td>25</td>
+                    <td>12-01-2024</td>
+                    <td><p class="maine_inprogess_listing">Scheduled</p></td>
+                    <td>Scheduled</td>
+                    <td>12-01-2024</td>
+                  </tr>
+                  <tr class="maine_tr_vendor">
+                    <td><input type="checkbox" /></td>
+
+                    <td>007</td>
+                    <td>Transformer Supply</td>
+                    <td>Power transformers</td>
+                    <td>Electrical</td>
+                    <td>BOS Electrical</td>
+                    <td>10</td>
+                    <td>21-01-2024</td>
+                    <td><p class="maine_inprogess_listing">Awaiting</p></td>
+                    <td>Procurement</td>
+                    <td>21-01-2024</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="pagination_outer">
+              <nav aria-label="Page navigation example">
+                <ul class="pagination">
+                  <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Previous">
+                      <span aria-hidden="true">«</span>
+                      <span class="sr-only"></span>
+                    </a>
+                  </li>
+                  <li class="page-item active">
+                    <a class="page-link" href="#">1</a>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Next">
+                      <span aria-hidden="true">»</span>
+                      <span class="sr-only"></span>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+
+            <div class="maine_dropdown">
+              <p>Items per page:</p>
+              <select>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="5">6</option>
+                <option value="5">7</option>
+                <option value="5">8</option>
+                <option value="5">9</option>
+                <option value="5">10</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="top_remove">2024 Avaada Group . All Rights Reserved.</footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Your custom JavaScript -->
+  </body>
+</html>

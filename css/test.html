@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vendor Rating</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .rating-form {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .rating-label {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+
+    .rating-slider {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    .slider-dots {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+
+    .slider-dot {
+      width: 10px;
+      height: 10px;
+      background-color: #007BFF;
+      border-radius: 50%;
+    }
+
+    button {
+      padding: 10px 15px;
+      background-color: #007BFF;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="rating-form">
+  <h2>Vendor Rating</h2>
+
+  <div class="rating-label">Rate the vendor:</div>
+
+  <input type="range" min="1" max="5" value="3" class="rating-slider" id="ratingSlider">
+  
+  <div class="slider-dots">
+    <span class="slider-dot"></span>
+    <span class="slider-dot"></span>
+    <span class="slider-dot"></span>
+    <span class="slider-dot"></span>
+    <span class="slider-dot"></span>
+  </div>
+
+  <button type="button">Submit Rating</button>
+</div>
+
+<script>
+  const slider = document.getElementById('ratingSlider');
+  const sliderDots = document.querySelectorAll('.slider-dot');
+
+  // Update the active dot based on slider value
+  slider.addEventListener('input', () => {
+    const value = parseInt(slider.value);
+    sliderDots.forEach((dot, index) => {
+      if (index < value) {
+        dot.style.backgroundColor = '#007BFF';
+      } else {
+        dot.style.backgroundColor = 'transparent';
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
