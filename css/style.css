@@ -1846,3 +1846,83 @@ header {
   font-weight: 500;
 }
 /* Project Detail Page CSS */
+
+/* Package Detail Code CSS */
+
+.listing_project_block_first {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+.seclected_form_detail {
+  width: 60%;
+}
+.seclected_form_detail_first {
+  display: flex;
+  align-items: center;
+  width: 20%;
+  gap: 1rem;
+}
+.create_listing_project a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+.maine_inprogess_listing_manager {
+  width: 13rem;
+  background: rgb(226 226 226);
+  color: #000;
+  font-weight: 500;
+  padding: 5px 10px;
+  margin: 2px;
+  border-radius: 5px;
+  border: 5px rgb(24, 38, 185);
+}
+.detail_block_1 {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.vendor_maine_content1 {
+  background-color: #f4f6f9;
+  color: #000;
+}
+.btn_uloadfile {
+  background-color: #f6f5f5;
+}
+.listing_btn_uploadfile_download {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: -10px;
+}
+.btn_download_war {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.block_btn_detail_upload {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+.listing_block_maine_allbtn {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.maine_btn_bom_block {
+  font-family: sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: #5c5a5a;
+}
+.closebtn_submit_block_btn {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: end;
+  gap: 1rem;
+}
+
+/* Package Detail Code CSS */

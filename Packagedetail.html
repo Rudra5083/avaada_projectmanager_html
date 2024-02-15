@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Avaada</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-2">
+            <a href="existing_vendors.html"
+              ><img src="images/logo.png" alt="" height="51"
+            /></a>
+          </div>
+
+          <div class="col-md-5 ms-auto invites_log1">
+            <div class="invites"></div>
+
+            <div class="notification">
+              <a
+                class="dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  fill="currentColor"
+                  class="bi bi-bell-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2m.995-14.901a1 1 0 1 0-1.99 0A5 5 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901"
+                  />
+                </svg>
+
+                <div class="circle">3</div>
+              </a>
+
+              <div class="dropdown">
+                <div class="notifications dropdown-menu">
+                  <div class="notifications_heading justify-content-between">
+                    Notifications
+
+                    <span>2 New</span>
+                  </div>
+
+                  <div class="notifications_inside">
+                    <ul>
+                      <li>
+                        <a href="#"
+                          >New vendor details submitted: Vendor Code VND205</a
+                        >
+                        <div class="time_outer">
+                          <img src="images/time.png" alt="" /> 30 Min Ago
+                        </div>
+                      </li>
+
+                      <li>
+                        <a href="#"
+                          >Vendor details received: Vendor Code VND203, Name -
+                          MechCorp Engineering.</a
+                        >
+                        <div class="time_outer">
+                          <img src="images/time.png" alt="" /> 47 Min Ago
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="user_box">
+              <img src="images/userkumar.png" alt="" />
+              <a
+                class="dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Rahul Verma
+              </a>
+
+              <div class="dropdown">
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Profile </a></li>
+                  <li><a class="dropdown-item" href="#">Settings</a></li>
+                  <li><a class="dropdown-item" href="index.html">Logout</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-2 left_menu">
+            <ul>
+              <li><a href="#">Dashboard</a></li>
+              <li><a href="#">Project</a></li>
+              <li><a href="#">Vendor</a></li>
+              <li><a href="#">RFQ</a></li>
+              <li><a href="#">Report</a></li>
+              <li><a href="Packageslisting.html">Packages</a></li>
+              <li><a href="#">Logout</a></li>
+              <!-- <li><a href="#">Accounts</a></li> -->
+            </ul>
+          </div>
+
+          <div class="col-md-10">
+            <div class="listing_project">
+              <p>Package Detail</p>
+            </div>
+            <div class="listing_project_block_first">
+              <div class="listing_project_block_2">
+                <div class="listing_project_block_3">
+                  <p><b>Project Name</b></p>
+                  <p class="block_detail_listing">Solar Project</p>
+                </div>
+              </div>
+              <div class="listing_project_block_2">
+                <div class="listing_project_block_3">
+                  <p><b>Package Date:</b></p>
+                  <p class="block_detail_listing">12-2-2024</p>
+                </div>
+              </div>
+              <div class="listing_project_block_2">
+                <div class="listing_project_block_3">
+                  <p><b>Created By:</b></p>
+                  <p class="block_detail_listing">Avaada</p>
+                </div>
+              </div>
+              <div class="listing_project_block_2">
+                <div class="listing_project_block_3">
+                  <p><b>Package Status:</b></p>
+                  <p class="block_detail_listing">Pending</p>
+                </div>
+              </div>
+            </div>
+            <div class="listing_project_block_1">
+              <div class="listing_project_block_2">
+                <div class="listing_project_block_3">
+                  <p><b>Project Name</b></p>
+                  <p class="block_detail_listing">Solar Project</p>
+                </div>
+              </div>
+              <div class="listing_project_block_2">
+                <div class="listing_project_block_3">
+                  <p><b>Project Code:</b></p>
+                  <p class="block_detail_listing">GH0038</p>
+                </div>
+              </div>
+              <div class="listing_project_block_2">
+                <div class="listing_project_block_3">
+                  <p><b>Project Location:</b></p>
+                  <p class="block_detail_listing">Delhi</p>
+                </div>
+              </div>
+              <div class="listing_project_block_2">
+                <div class="listing_project_block_3">
+                  <p><b>No. of Packages:</b></p>
+                  <p class="block_detail_listing">6</p>
+                </div>
+              </div>
+              <div class="listing_project_block_2">
+                <div class="listing_project_block_3">
+                  <p><b>Capacity:</b></p>
+                  <p class="block_detail_listing">232</p>
+                </div>
+              </div>
+            </div>
+            <h5 style="margin-top: 20px">BOQ</h5>
+            <div class="search_filter_outers ms-auto">
+              <div class="seclected_form_detail_first">
+                <select
+                  class="form-select seclected_form_detail"
+                  aria-label="Default select example"
+                  fdprocessedid="zlera"
+                >
+                  <option selected="">Select</option>
+                  <option value="1">On Hold</option>
+                  <option value="2">Ok</option>
+                </select>
+                <select
+                  class="form-select seclected_form_detail"
+                  aria-label="Default select example"
+                  fdprocessedid="zlera"
+                >
+                  <option selected="">Select</option>
+                  <option value="1">On Hold</option>
+                  <option value="2">Ok</option>
+                </select>
+              </div>
+
+              <div class="create_listing_project">
+                <a
+                  class="vendor_btn vendor_maine_content"
+                  data-toggle="modal"
+                  data-target="#contactModal"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-pencil"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325"
+                    />
+                  </svg>
+                  Edit BOQ</a
+                >
+                <div class="filter_main">
+                  <button fdprocessedid="wyyigxh">
+                    <span>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-funnel"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M1.5 1.5A.5.5 0 0 1 2 1h12a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.128.334L10 8.692V13.5a.5.5 0 0 1-.342.474l-3 1A.5.5 0 0 1 6 14.5V8.692L1.628 3.834A.5.5 0 0 1 1.5 3.5zm1 .5v1.308l4.372 4.858A.5.5 0 0 1 7 8.5v5.306l2-.666V8.5a.5.5 0 0 1 .128-.334L13.5 3.308V2z"
+                        ></path>
+                      </svg>
+                    </span>
+                    Filter
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="listing_main" style="overflow-x: scroll">
+              <table>
+                <thead>
+                  <tr>
+                    <th><input type="checkbox" /></th>
+                    <th class="vendor_tabels">
+                      Item No <img src="images/code.png" alt="" />
+                    </th>
+                    <th class="vendor_tabels">
+                      Description<img src="images/code.png" alt="" />
+                    </th>
+                    <th class="vendor_tabels">
+                      HSN/SAC Code
+                      <img src="images/code.png" alt="" />
+                    </th>
+                    <th class="vendor_tabels">
+                      Units <img src="images/code.png" alt="" />
+                    </th>
+                    <th class="vendor_tabels">
+                      Quantity
+                      <img src="images/code.png" alt="" />
+                    </th>
+                    <th class="vendor_tabels">
+                      Rate (in INR) <img src="images/code.png" alt="" />
+                    </th>
+                    <th class="vendor_tabels">
+                      Amount (In INR)
+                      <img src="images/code.png" alt="" />
+                    </th>
+                    <th class="vendor_tabels">
+                      Remarks <img src="images/code.png" alt="" />
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="maine_tr_vendor">
+                    <td><input type="checkbox" /></td>
+
+                    <td>1</td>
+                    <td>
+                      <p class="maine_inprogess_listing_manager">
+                        Solar development project
+                      </p>
+                    </td>
+                    <td>
+                      <p class="maine_inprogess_listing_manager">GHJ134</p>
+                    </td>
+                    <td>
+                      <p class="maine_inprogess_listing_manager">24</p>
+                    </td>
+                    <td>
+                      <p class="maine_inprogess_listing_manager">2</p>
+                    </td>
+                    <td>
+                      <p class="maine_inprogess_listing_manager">12,000</p>
+                    </td>
+                    <td>
+                      <p class="maine_inprogess_listing_manager">12,000</p>
+                    </td>
+                    <td class="detail_block_1">
+                      <p class="maine_inprogess_listing_manager">Delivered</p>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-x-circle-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          style="color: red"
+                          d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293z"
+                        />
+                      </svg>
+                    </td>
+                  </tr>
+                  <tr class="maine_tr_vendor">
+                    <td><input type="checkbox" /></td>
+
+                    <td>2</td>
+                    <td>
+                      <p class="maine_inprogess_listing_manager">
+                        Solar development project
+                      </p>
+                    </td>
+                    <td>
+                      <p class="maine_inprogess_listing_manager">bHJ136</p>
+                    </td>
+                    <td>
+                      <p class="maine_inprogess_listing_manager">23</p>
+                    </td>
+                    <td>
+                      <p class="maine_inprogess_listing_manager">3</p>
+                    </td>
+                    <td>
+                      <p class="maine_inprogess_listing_manager">13,456</p>
+                    </td>
+                    <td>
+                      <p class="maine_inprogess_listing_manager">13,456</p>
+                    </td>
+                    <td class="detail_block_1">
+                      <p class="maine_inprogess_listing_manager">Pending</p>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-x-circle-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          style="color: red"
+                          d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293z"
+                        />
+                      </svg>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="pagination_outer">
+              <nav aria-label="Page navigation example">
+                <ul class="pagination">
+                  <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Previous">
+                      <span aria-hidden="true">«</span>
+                      <span class="sr-only"></span>
+                    </a>
+                  </li>
+                  <li class="page-item active">
+                    <a class="page-link" href="#">1</a>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Next">
+                      <span aria-hidden="true">»</span>
+                      <span class="sr-only"></span>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+
+            <div class="maine_dropdown">
+              <p>Items per page:</p>
+              <select>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="5">6</option>
+                <option value="5">7</option>
+                <option value="5">8</option>
+                <option value="5">9</option>
+                <option value="5">10</option>
+              </select>
+              <div class="create_listing_project">
+                <a
+                  class="vendor_btn vendor_maine_content1"
+                  data-toggle="modal"
+                  data-target="#contactModal"
+                >
+                  + Add Row
+                </a>
+              </div>
+            </div>
+            <div class="listing_block_maine_allbtn">
+            <div style="margin-top: 10px;">
+                <p class="maine_btn_bom_block">BOM</p>
+                <div class="listing_btn_uploadfile_download">
+                  <div class="create_listing_project">
+                    <a
+                      class="vendor_btn vendor_maine_content1"
+                      data-toggle="modal"
+                      data-target="#contactModal"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-cloud-arrow-up-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M8 2a5.53 5.53 0 0 0-3.594 1.342c-.766.66-1.321 1.52-1.464 2.383C1.266 6.095 0 7.555 0 9.318 0 11.366 1.708 13 3.781 13h8.906C14.502 13 16 11.57 16 9.773c0-1.636-1.242-2.969-2.834-3.194C12.923 3.999 10.69 2 8 2m2.354 5.146a.5.5 0 0 1-.708.708L8.5 6.707V10.5a.5.5 0 0 1-1 0V6.707L6.354 7.854a.5.5 0 1 1-.708-.708l2-2a.5.5 0 0 1 .708 0z"
+                        />
+                      </svg>
+                      Upload File
+                    </a>
+                  </div>
+                  <div class="btn_download_war">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-cloud-arrow-down-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      =
+                      <path
+                        d="M8 2a5.53 5.53 0 0 0-3.594 1.342c-.766.66-1.321 1.52-1.464 2.383C1.266 6.095 0 7.555 0 9.318 0 11.366 1.708 13 3.781 13h8.906C14.502 13 16 11.57 16 9.773c0-1.636-1.242-2.969-2.834-3.194C12.923 3.999 10.69 2 8 2m2.354 6.854-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 1 1 .708-.708L7.5 9.293V5.5a.5.5 0 0 1 1 0v3.793l1.146-1.147a.5.5 0 0 1 .708.708"
+                      />
+                      <p style="margin-top: 10px">Download</p>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div style="margin-top: 10px;">
+                <p class="maine_btn_bom_block">Tendor Drawing  </p>
+                <div class="listing_btn_uploadfile_download">
+                  <div class="create_listing_project">
+                    <a
+                      class="vendor_btn vendor_maine_content1"
+                      data-toggle="modal"
+                      data-target="#contactModal"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-cloud-arrow-up-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M8 2a5.53 5.53 0 0 0-3.594 1.342c-.766.66-1.321 1.52-1.464 2.383C1.266 6.095 0 7.555 0 9.318 0 11.366 1.708 13 3.781 13h8.906C14.502 13 16 11.57 16 9.773c0-1.636-1.242-2.969-2.834-3.194C12.923 3.999 10.69 2 8 2m2.354 5.146a.5.5 0 0 1-.708.708L8.5 6.707V10.5a.5.5 0 0 1-1 0V6.707L6.354 7.854a.5.5 0 1 1-.708-.708l2-2a.5.5 0 0 1 .708 0z"
+                        />
+                      </svg>
+                      Upload File
+               
+                    </a>
+                  </div>
+                  <div class="btn_download_war">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-cloud-arrow-down-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      =
+                      <path
+                        d="M8 2a5.53 5.53 0 0 0-3.594 1.342c-.766.66-1.321 1.52-1.464 2.383C1.266 6.095 0 7.555 0 9.318 0 11.366 1.708 13 3.781 13h8.906C14.502 13 16 11.57 16 9.773c0-1.636-1.242-2.969-2.834-3.194C12.923 3.999 10.69 2 8 2m2.354 6.854-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 1 1 .708-.708L7.5 9.293V5.5a.5.5 0 0 1 1 0v3.793l1.146-1.147a.5.5 0 0 1 .708.708"
+                      />
+                      <p style="margin-top: 10px">Download</p>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div style="margin-top: 10px;">
+                <p class="maine_btn_bom_block">Technical Specification  </p>
+                <div class="listing_btn_uploadfile_download">
+                  <div class="create_listing_project">
+                    <a
+                      class="vendor_btn vendor_maine_content1"
+                      data-toggle="modal"
+                      data-target="#contactModal"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-cloud-arrow-up-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M8 2a5.53 5.53 0 0 0-3.594 1.342c-.766.66-1.321 1.52-1.464 2.383C1.266 6.095 0 7.555 0 9.318 0 11.366 1.708 13 3.781 13h8.906C14.502 13 16 11.57 16 9.773c0-1.636-1.242-2.969-2.834-3.194C12.923 3.999 10.69 2 8 2m2.354 5.146a.5.5 0 0 1-.708.708L8.5 6.707V10.5a.5.5 0 0 1-1 0V6.707L6.354 7.854a.5.5 0 1 1-.708-.708l2-2a.5.5 0 0 1 .708 0z"
+                        />
+                      </svg>
+                      Upload File
+                    </a>
+                  </div>
+                  <div class="btn_download_war">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-cloud-arrow-down-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      =
+                      <path
+                        d="M8 2a5.53 5.53 0 0 0-3.594 1.342c-.766.66-1.321 1.52-1.464 2.383C1.266 6.095 0 7.555 0 9.318 0 11.366 1.708 13 3.781 13h8.906C14.502 13 16 11.57 16 9.773c0-1.636-1.242-2.969-2.834-3.194C12.923 3.999 10.69 2 8 2m2.354 6.854-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 1 1 .708-.708L7.5 9.293V5.5a.5.5 0 0 1 1 0v3.793l1.146-1.147a.5.5 0 0 1 .708.708"
+                      />
+                      <p style="margin-top: 10px">Download</p>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="closebtn_submit_block_btn">
+            <button type="button" class="btn clear_btn" >
+                Close
+              </button>
+              <button type="button" class="btn btn-success save_next_btn" >
+                Submit
+              </button>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="top_remove">2024 Avaada Group . All Rights Reserved.</footer>
+
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Your custom JavaScript -->
+  </body>
+</html>
