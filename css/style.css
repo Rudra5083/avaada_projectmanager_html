@@ -1529,7 +1529,7 @@ header {
 }
 .maine_dropdown {
   display: flex;
-  align-items: center;
+  align-items: baseline;
   gap: 20px;
   margin-top: 8px;
 }
@@ -1871,7 +1871,7 @@ header {
 }
 .maine_inprogess_listing_manager {
   width: 13rem;
-  background: rgb(226 226 226);
+  background: rgb(226 218 218);
   color: #000;
   font-weight: 500;
   padding: 5px 10px;
