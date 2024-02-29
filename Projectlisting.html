@@ -24,7 +24,7 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col-md-2">
-            <a href="existing_vendors.html"
+            <a href="Projectlisting.html"
               ><img src="images/logo.png" alt="" height="51"
             /></a>
           </div>
@@ -104,7 +104,9 @@
 
               <div class="dropdown">
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Profile</a></li>
+                  <li>
+                    <a class="dropdown-item" href="account.html">Profile</a>
+                  </li>
                   <li><a class="dropdown-item" href="#">Settings</a></li>
                   <li><a class="dropdown-item" href="index.html">Logout</a></li>
                 </ul>
@@ -206,7 +208,7 @@
               aria-labelledby="contactModalLabel"
               aria-hidden="true"
             >
-              <div class="modal-dialog" role="document">
+              <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
                   <div class="modal-header">
                     <h5 class="modal-title" id="contactModalLabel">
@@ -347,7 +349,7 @@
               aria-labelledby="successModalLabel"
               aria-hidden="true"
             >
-              <div class="modal-dialog" role="document">
+              <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
                   <div class="modal-headers">
                     <h5></h5>
@@ -579,6 +581,7 @@
         });
       });
     </script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script>
       function validateForm() {
         var projectName = document.getElementById("projectName").value;
@@ -611,6 +614,11 @@
           // You can close the project modal if needed
           $("#contactModal").modal("hide");
         }
+      }
+    </script>
+    <script>
+      function closeModal() {
+        $("#contactModal").modal("hide");
       }
     </script>
   </body>

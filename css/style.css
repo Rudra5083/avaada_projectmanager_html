@@ -1911,6 +1911,7 @@ header {
   display: flex;
   align-items: center;
   gap: 2rem;
+  width: 95%;
 }
 .maine_btn_bom_block {
   font-family: sans-serif;
@@ -1926,3 +1927,28 @@ header {
 }
 
 /* Package Detail Code CSS */
+
+/* 4 digit code Csss  */
+.password_main_listing_block {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.form-hs {
+  height: 55px;
+  border: #c9c9c9 solid 1px;
+  /* padding: 10px 40px; */
+  text-align: center;
+  width: 20%;
+}
+.text-secondary a {
+  text-decoration: none !important;
+}
+.clear_btn a {
+  text-decoration: none !important;
+}
+.feature_modal {
+  text-align: center;
+  margin-bottom: 20px;
+}
+/* 4 digit code Csss  */

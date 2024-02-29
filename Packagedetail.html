@@ -18,7 +18,7 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col-md-2">
-            <a href="existing_vendors.html"
+            <a href="Projectlisting.html"
               ><img src="images/logo.png" alt="" height="51"
             /></a>
           </div>
@@ -98,7 +98,9 @@
 
               <div class="dropdown">
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Profile </a></li>
+                  <li>
+                    <a class="dropdown-item" href="account.html">Profile </a>
+                  </li>
                   <li><a class="dropdown-item" href="#">Settings</a></li>
                   <li><a class="dropdown-item" href="index.html">Logout</a></li>
                 </ul>
@@ -115,7 +117,7 @@
           <div class="col-md-2 left_menu">
             <ul>
               <li><a href="#">Dashboard</a></li>
-              <li><a href="#">Project</a></li>
+              <li><a href="Projectlisting.html">Project</a></li>
               <li><a href="#">Vendor</a></li>
               <li><a href="#">RFQ</a></li>
               <li><a href="#">Report</a></li>
@@ -196,16 +198,7 @@
                   fdprocessedid="zlera"
                 >
                   <option selected="">Select</option>
-                  <option value="1">Select</option>
-                  <option value="2">Select</option>
-                </select>
-                <select
-                  class="form-select seclected_form_detail"
-                  aria-label="Default select example"
-                  fdprocessedid="zlera"
-                >
-                  <option selected="">Select</option>
-                  <option value="1">Select</option>
+                  <option value="1">Mention Supply</option>
                   <option value="2">Select</option>
                 </select>
               </div>
@@ -214,8 +207,9 @@
                 <a
                   class="vendor_btn vendor_maine_content"
                   data-toggle="modal"
-                  data-target="#contactModal"
-                  ><svg
+                  data-target="#newModal"
+                >
+                  <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="16"
                     height="16"
@@ -225,10 +219,10 @@
                   >
                     <path
                       d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325"
-                    />
+                    ></path>
                   </svg>
-                  Edit BOQ</a
-                >
+                  Edit BOQ
+                </a>
                 <div class="filter_main">
                   <button fdprocessedid="wyyigxh">
                     <span>
@@ -250,7 +244,33 @@
                 </div>
               </div>
             </div>
-
+            <div
+              class="modal fade"
+              id="newModal"
+              tabindex="-1"
+              role="dialog"
+              aria-labelledby="newModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="newModalLabel">Edit BOQ</h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                      fdprocessedid="pd0xai"
+                    ></button>
+                  </div>
+                  <div class="modal-body feature_modal">
+                    You don't have access to this feature, please contact to the
+                    Engineer
+                  </div>
+                </div>
+              </div>
+            </div>
             <div class="listing_main" style="overflow-x: scroll">
               <table>
                 <thead>
@@ -305,26 +325,13 @@
                       <p class="maine_inprogess_listing_manager">2</p>
                     </td>
                     <td>
-                      <p class="maine_inprogess_listing_manager">12,000</p>
+                      <p class="maine_inprogess_listing_manager">0</p>
                     </td>
                     <td>
-                      <p class="maine_inprogess_listing_manager">12,000</p>
+                      <p class="maine_inprogess_listing_manager">0</p>
                     </td>
                     <td class="detail_block_1">
-                      <p class="maine_inprogess_listing_manager">Delivered</p>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="16"
-                        height="16"
-                        fill="currentColor"
-                        class="bi bi-x-circle-fill"
-                        viewBox="0 0 16 16"
-                      >
-                        <path
-                          style="color: red"
-                          d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293z"
-                        />
-                      </svg>
+                      <p class="maine_inprogess_listing_manager">0</p>
                     </td>
                   </tr>
                   <tr class="maine_tr_vendor">
@@ -346,26 +353,13 @@
                       <p class="maine_inprogess_listing_manager">3</p>
                     </td>
                     <td>
-                      <p class="maine_inprogess_listing_manager">13,456</p>
+                      <p class="maine_inprogess_listing_manager">0</p>
                     </td>
                     <td>
-                      <p class="maine_inprogess_listing_manager">13,456</p>
+                      <p class="maine_inprogess_listing_manager">0</p>
                     </td>
                     <td class="detail_block_1">
-                      <p class="maine_inprogess_listing_manager">Pending</p>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="16"
-                        height="16"
-                        fill="currentColor"
-                        class="bi bi-x-circle-fill"
-                        viewBox="0 0 16 16"
-                      >
-                        <path
-                          style="color: red"
-                          d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293z"
-                        />
-                      </svg>
+                      <p class="maine_inprogess_listing_manager">0</p>
                     </td>
                   </tr>
                 </tbody>
@@ -410,18 +404,9 @@
                 <option value="5">9</option>
                 <option value="5">10</option>
               </select>
-              <div class="create_listing_project">
-                <a
-                  class="vendor_btn vendor_maine_content1"
-                  data-toggle="modal"
-                  data-target="#contactModal"
-                >
-                  + Add Row
-                </a>
-              </div>
             </div>
             <div class="listing_block_maine_allbtn">
-            <div style="margin-top: 10px;">
+              <div style="margin-top: 10px">
                 <p class="maine_btn_bom_block">BOM</p>
                 <div class="listing_btn_uploadfile_download">
                   <div class="create_listing_project">
@@ -446,6 +431,7 @@
                     </a>
                   </div>
                   <div class="btn_download_war">
+                    <label>BOM:</label>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="16"
@@ -454,7 +440,6 @@
                       class="bi bi-cloud-arrow-down-fill"
                       viewBox="0 0 16 16"
                     >
-                      =
                       <path
                         d="M8 2a5.53 5.53 0 0 0-3.594 1.342c-.766.66-1.321 1.52-1.464 2.383C1.266 6.095 0 7.555 0 9.318 0 11.366 1.708 13 3.781 13h8.906C14.502 13 16 11.57 16 9.773c0-1.636-1.242-2.969-2.834-3.194C12.923 3.999 10.69 2 8 2m2.354 6.854-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 1 1 .708-.708L7.5 9.293V5.5a.5.5 0 0 1 1 0v3.793l1.146-1.147a.5.5 0 0 1 .708.708"
                       />
@@ -463,51 +448,8 @@
                   </div>
                 </div>
               </div>
-              <div style="margin-top: 10px;">
-                <p class="maine_btn_bom_block">Tendor Drawing  </p>
-                <div class="listing_btn_uploadfile_download">
-                  <div class="create_listing_project">
-                    <a
-                      class="vendor_btn vendor_maine_content1"
-                      data-toggle="modal"
-                      data-target="#contactModal"
-                    >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="16"
-                        height="16"
-                        fill="currentColor"
-                        class="bi bi-cloud-arrow-up-fill"
-                        viewBox="0 0 16 16"
-                      >
-                        <path
-                          d="M8 2a5.53 5.53 0 0 0-3.594 1.342c-.766.66-1.321 1.52-1.464 2.383C1.266 6.095 0 7.555 0 9.318 0 11.366 1.708 13 3.781 13h8.906C14.502 13 16 11.57 16 9.773c0-1.636-1.242-2.969-2.834-3.194C12.923 3.999 10.69 2 8 2m2.354 5.146a.5.5 0 0 1-.708.708L8.5 6.707V10.5a.5.5 0 0 1-1 0V6.707L6.354 7.854a.5.5 0 1 1-.708-.708l2-2a.5.5 0 0 1 .708 0z"
-                        />
-                      </svg>
-                      Upload File
-               
-                    </a>
-                  </div>
-                  <div class="btn_download_war">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="16"
-                      fill="currentColor"
-                      class="bi bi-cloud-arrow-down-fill"
-                      viewBox="0 0 16 16"
-                    >
-                      =
-                      <path
-                        d="M8 2a5.53 5.53 0 0 0-3.594 1.342c-.766.66-1.321 1.52-1.464 2.383C1.266 6.095 0 7.555 0 9.318 0 11.366 1.708 13 3.781 13h8.906C14.502 13 16 11.57 16 9.773c0-1.636-1.242-2.969-2.834-3.194C12.923 3.999 10.69 2 8 2m2.354 6.854-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 1 1 .708-.708L7.5 9.293V5.5a.5.5 0 0 1 1 0v3.793l1.146-1.147a.5.5 0 0 1 .708.708"
-                      />
-                      <p style="margin-top: 10px">Download</p>
-                    </svg>
-                  </div>
-                </div>
-              </div>
-              <div style="margin-top: 10px;">
-                <p class="maine_btn_bom_block">Technical Specification  </p>
+              <div style="margin-top: 10px">
+                <p class="maine_btn_bom_block">Tendor Drawing</p>
                 <div class="listing_btn_uploadfile_download">
                   <div class="create_listing_project">
                     <a
@@ -531,6 +473,7 @@
                     </a>
                   </div>
                   <div class="btn_download_war">
+                    <label>Tendor Drawing:</label>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="16"
@@ -539,7 +482,48 @@
                       class="bi bi-cloud-arrow-down-fill"
                       viewBox="0 0 16 16"
                     >
-                      =
+                      <path
+                        d="M8 2a5.53 5.53 0 0 0-3.594 1.342c-.766.66-1.321 1.52-1.464 2.383C1.266 6.095 0 7.555 0 9.318 0 11.366 1.708 13 3.781 13h8.906C14.502 13 16 11.57 16 9.773c0-1.636-1.242-2.969-2.834-3.194C12.923 3.999 10.69 2 8 2m2.354 6.854-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 1 1 .708-.708L7.5 9.293V5.5a.5.5 0 0 1 1 0v3.793l1.146-1.147a.5.5 0 0 1 .708.708"
+                      />
+                      <p style="margin-top: 10px">Download</p>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div style="margin-top: 10px">
+                <p class="maine_btn_bom_block">Technical Specification</p>
+                <div class="listing_btn_uploadfile_download">
+                  <div class="create_listing_project">
+                    <a
+                      class="vendor_btn vendor_maine_content1"
+                      data-toggle="modal"
+                      data-target="#contactModal"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-cloud-arrow-up-fill"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M8 2a5.53 5.53 0 0 0-3.594 1.342c-.766.66-1.321 1.52-1.464 2.383C1.266 6.095 0 7.555 0 9.318 0 11.366 1.708 13 3.781 13h8.906C14.502 13 16 11.57 16 9.773c0-1.636-1.242-2.969-2.834-3.194C12.923 3.999 10.69 2 8 2m2.354 5.146a.5.5 0 0 1-.708.708L8.5 6.707V10.5a.5.5 0 0 1-1 0V6.707L6.354 7.854a.5.5 0 1 1-.708-.708l2-2a.5.5 0 0 1 .708 0z"
+                        />
+                      </svg>
+                      Upload File
+                    </a>
+                  </div>
+                  <div class="btn_download_war">
+                    <label>Technical Specification:</label>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-cloud-arrow-down-fill"
+                      viewBox="0 0 16 16"
+                    >
                       <path
                         d="M8 2a5.53 5.53 0 0 0-3.594 1.342c-.766.66-1.321 1.52-1.464 2.383C1.266 6.095 0 7.555 0 9.318 0 11.366 1.708 13 3.781 13h8.906C14.502 13 16 11.57 16 9.773c0-1.636-1.242-2.969-2.834-3.194C12.923 3.999 10.69 2 8 2m2.354 6.854-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 1 1 .708-.708L7.5 9.293V5.5a.5.5 0 0 1 1 0v3.793l1.146-1.147a.5.5 0 0 1 .708.708"
                       />
@@ -550,13 +534,9 @@
               </div>
             </div>
             <div class="closebtn_submit_block_btn">
-            <button type="button" class="btn clear_btn" >
-                Close
+              <button type="button" class="btn clear_btn">
+                <a href="Projectlisting.html">Close</a>
               </button>
-              <button type="button" class="btn btn-success save_next_btn" >
-                Submit
-              </button>
-            </div>
             </div>
           </div>
         </div>
