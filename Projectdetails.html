@@ -93,7 +93,7 @@
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                Rahul Verma
+                Project Manager
               </a>
 
               <div class="dropdown">
@@ -118,8 +118,8 @@
             <ul>
               <li><a href="#">Dashboard</a></li>
               <li><a href="Projectlisting.html">Project</a></li>
-              <li><a href="#">Vendor</a></li>
-              <li><a href="#">RFQ</a></li>
+              <li><a href="existing_vendors.html">Vendor</a></li>
+              <li><a href="RFQlisting.html">RFQ</a></li>
               <li><a href="#">Report</a></li>
               <li><a href="Packageslisting.html">Packages</a></li>
               <li><a href="#">Logout</a></li>
@@ -201,9 +201,10 @@
                 <a
                   class="vendor_btn vendor_maine_content"
                   data-toggle="modal"
-                  data-target="#contactModal"
-                  >+ Create Package</a
+                  data-target="#createpackage"
                 >
+                  + Create Package
+                </a>
                 <div class="filter_main">
                   <button fdprocessedid="wyyigxh">
                     <span>
@@ -226,6 +227,38 @@
               </div>
             </div>
 
+            <!-- Create Package Modal  -->
+            <div
+              class="modal fade"
+              id="createpackage"
+              tabindex="-1"
+              role="dialog"
+              aria-labelledby="createPackageLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="createPackageLabel">
+                      Create Package
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                      fdprocessedid="rtk8j"
+                    ></button>
+                  </div>
+                  <div class="modal-bodys">
+                    <p style="margin-top: 1rem; padding-bottom: 1rem">
+                      You don't have rights for this feature. Please coordinate
+                      with Engineer/QA team.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
             <div class="listing_main" style="overflow-x: scroll">
               <table>
                 <thead>
