@@ -123,7 +123,7 @@
           <div class="col-md-2 left_menu">
             <ul>
               <li><a href="#">Dashboard</a></li>
-              <li><a href="#">Project</a></li>
+              <li><a href="Projectlisting.html">Project</a></li>
               <li><a href="existing_vendors.html">Vendor</a></li>
               <li><a href="RFQlisting.html">RFQ</a></li>
               <li><a href="#">Report</a></li>
@@ -250,7 +250,6 @@
                             id="projectCode"
                             class="form-control form_h_modal"
                             placeholder="Enter Project Code"
-                            required
                           />
                           <div
                             class="error-message"
@@ -293,15 +292,32 @@
                       <div class="lets_modal_vendor">
                         <div class="lets_select_sme">
                           <label class="mb-1 text-dark"
-                            >COD <span class="required">*</span></label
+                            >Calender <span class="required">*</span></label
                           >
+
                           <input
                             type="text"
                             id="cod"
                             class="form-control form_h_modal"
-                            placeholder="Enter COD"
+                            placeholder="03-03-2024"
                             required
                           />
+                          <svg
+                            style="margin-top: -4rem; margin-left: 12rem"
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            fill="currentColor"
+                            class="bi bi-calendar-date"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M6.445 11.688V6.354h-.633A13 13 0 0 0 4.5 7.16v.695c.375-.257.969-.62 1.258-.777h.012v4.61zm1.188-1.305c.047.64.594 1.406 1.703 1.406 1.258 0 2-1.066 2-2.871 0-1.934-.781-2.668-1.953-2.668-.926 0-1.797.672-1.797 1.809 0 1.16.824 1.77 1.676 1.77.746 0 1.23-.376 1.383-.79h.027c-.004 1.316-.461 2.164-1.305 2.164-.664 0-1.008-.45-1.05-.82zm2.953-2.317c0 .696-.559 1.18-1.184 1.18-.601 0-1.144-.383-1.144-1.2 0-.823.582-1.21 1.168-1.21.633 0 1.16.398 1.16 1.23"
+                            />
+                            <path
+                              d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z"
+                            />
+                          </svg>
                           <div class="error-message" id="codError"></div>
                         </div>
                         <div class="lets_select_sme">
@@ -312,7 +328,7 @@
                             type="text"
                             id="date"
                             class="form-control form_h_modal"
-                            placeholder="Enter Date"
+                            placeholder="04-03-2024"
                             required
                           />
                           <div class="error-message" id="dateError"></div>
@@ -508,6 +524,7 @@
             <div class="pagination_outer">
               <nav aria-label="Page navigation example">
                 <ul class="pagination">
+                  <label>Previous</label>
                   <li class="page-item">
                     <a class="page-link" href="#" aria-label="Previous">
                       <span aria-hidden="true">«</span>
@@ -525,6 +542,7 @@
                       <span class="sr-only"></span>
                     </a>
                   </li>
+                  <label>Next</label>
                 </ul>
               </nav>
             </div>
@@ -606,20 +624,16 @@
           : "COD is required";
 
         // Check if all fields are filled
-        if (projectName && projectCode && projectLocation && capacity && cod) {
+        if (projectName && projectLocation && capacity && cod) {
           // You can submit the form or perform any other action here
-          // For example, you can display a success message or submit the form to the server
           // For now, I'll just show the success modal
-          $("#successModal").modal("show");
-          // You can close the project modal if needed
-          $("#contactModal").modal("hide");
+          $("#contactModal").modal("hide"); // Hide the first modal
+          $("#successModal").modal("show"); // Show the success modal
         }
       }
     </script>
     <script>
-      function closeModal() {
-        $("#contactModal").modal("hide");
-      }
+      $("#contactModal").modal("hide");
     </script>
   </body>
 </html>
